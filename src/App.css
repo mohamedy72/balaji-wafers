@@ -1,0 +1,52 @@
+.input {
+  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+  border-radius: 2.25rem;
+}
+
+.btn-group {
+  background-color: var(--btn-bg-primary);
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  color: var(--btn-bg-secondary);
+  font-weight: 600;
+  font-size: 1.25rem;
+  border: none;
+  outline: none;
+}
+
+.btn-icon {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background-image: var(--gradient-1);
+}
+
+.btn-icon > img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.counter-group {
+  display: flex;
+  gap: 0.9375rem;
+  align-items: center;
+}
+
+.counter-group .counter {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  background-color: var(--btn-bg-secondary);
+  font-weight: 400;
+  font-size: 1.875rem;
+  border: none;
+  filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.08));
+}
+
+.counter-group .counter:nth-of-type(2) {
+  outline: #ffd154 solid 1px;
+  outline-offset: 3px;
+}

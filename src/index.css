@@ -1,0 +1,27 @@
+:root {
+  --main-bg: #f7efed;
+  --btn-bg-primary: rgb(9, 9, 9);
+  --btn-bg-secondary: rgb(250, 250, 250);
+
+  --gradient-1: linear-gradient(100.94deg, #ffd154 10.56%, #ffc936 93.56%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  max-width: 87.5rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  padding: 0.625rem;
+}
