@@ -1,13 +1,13 @@
 .input {
   padding: 0.5rem 1.5rem 0.5rem 0.5rem;
   border-radius: 2.25rem;
-}
-
-.btn-group {
   background-color: var(--btn-bg-primary);
   display: flex;
   gap: 1.5rem;
   align-items: center;
+}
+
+.btn-group {
   color: var(--btn-bg-secondary);
   font-weight: 600;
   font-size: 1.25rem;
@@ -49,4 +49,67 @@
 .counter-group .counter:nth-of-type(2) {
   outline: #ffd154 solid 1px;
   outline-offset: 3px;
+}
+
+/* Header */
+.header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo > img {
+  width: 7rem;
+  height: 6rem;
+}
+
+.header-nav .header-nav-items {
+  display: flex;
+  gap: 3.125rem;
+}
+
+.header-nav .header-nav-items li a {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--btn-bg-primary);
+  text-transform: uppercase;
+}
+
+.header-search-bar {
+  padding: 0.8rem 1rem;
+}
+
+.header-search-bar > img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.header-search-bar > img:last-child {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.header-search-bar > input {
+  padding: 0.5rem;
+}
+
+.header-search-bar > input::placeholder {
+  color: var(--btn-bg-secondary);
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+/* Main */
+
+.main {
+  padding: 1rem;
+  display: flex;
+}
+
+.main .left > h1 {
+}
+
+.main .right {
+  display: flex;
 }
