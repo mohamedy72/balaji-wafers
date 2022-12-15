@@ -46,6 +46,15 @@
   filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.08));
 }
 
+.counter-group .counter:not(:nth-child(2)) {
+  transition: background-color 0.5s ease, color 0.5s ease;
+  cursor: pointer;
+}
+.counter-group .counter:not(:nth-child(2)):hover {
+  background-color: var(--btn-bg-primary);
+  color: var(--btn-bg-secondary);
+}
+
 .counter-group .counter:nth-of-type(2) {
   outline: #ffd154 solid 1px;
   outline-offset: 3px;
@@ -57,6 +66,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-block-end: 1.25rem;
 }
 
 .header .logo > img {
@@ -107,9 +117,86 @@
   display: flex;
 }
 
+.main .left {
+  padding-block-start: 3rem;
+  display: flex;
+  flex-direction: column;
+
+  flex-basis: 36.875rem;
+}
+
 .main .left > h1 {
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 97px;
+  text-transform: uppercase;
+}
+
+.main .left > h1::before {
+  content: "";
+  position: absolute;
+  background: url(./assets/plane.png) no-repeat center center/contain;
+  top: -5rem;
+  left: 10rem;
+  width: 9rem;
+  height: 7rem;
+}
+.main .left > h1::after {
+  content: "";
+  position: absolute;
+  background: url(./assets/pepper-1.png) no-repeat center center/contain;
+  right: 6rem;
+  top: 2rem;
+  width: 13rem;
+  height: 11rem;
+}
+
+.main .left > p {
+  margin-bottom: 2.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5625rem;
+  line-height: 29px;
+  opacity: 0.3;
+}
+
+.main .left > .btns-group {
+  display: flex;
+  gap: 2.8125rem;
+  align-items: center;
 }
 
 .main .right {
   display: flex;
+}
+
+.main .right > .main-img {
+  width: 475.04px;
+  height: 615.66px;
+  filter: drop-shadow(1px 1px 50px rgba(0, 0, 0, 0.5));
+}
+
+.main .right > .ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  display: flex;
+  margin-block-start: 4rem;
+}
+
+.main .right > .ingredients > .ingredient {
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+  text-transform: uppercase;
+}
+.main .right > .ingredients .icon {
+  width: 5rem;
+  height: 5rem;
+  background-color: red;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
 }

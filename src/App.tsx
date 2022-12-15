@@ -10,7 +10,8 @@ function App() {
       {/* Header */}
       <Header />
       {/* Main */}
-      {/* <Main /> */}
+      <Main />
+      {/* Footer */}
     </div>
   );
 }

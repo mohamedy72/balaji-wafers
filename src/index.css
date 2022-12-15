@@ -34,9 +34,15 @@ input {
   outline: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   max-width: 87.5rem;
   margin: 0 auto;
   line-height: 1.5;
-  padding: 0.625rem;
+  padding: 0.625rem 3rem;
+  background-color: var(--main-bg);
 }

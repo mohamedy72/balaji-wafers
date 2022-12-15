@@ -26,16 +26,20 @@ const Main = (props: Props) => {
         <div className="main-img">
           <img src={product} alt="Nachos Product Image" />
         </div>
-        <div className="ingerdients">
-          <div className="ingerdient">
+        <div className="ingredients">
+          <div className="ingredient">
             <div className="icon">
               <img src={chilli} alt="" />
             </div>
-            <h3>Chili</h3>
+            <h3>Chilli</h3>
+          </div>
+          <div className="ingredient">
             <div className="icon">
               <img src={corn} alt="" />
             </div>
             <h3>Corn</h3>
+          </div>
+          <div className="ingredient">
             <div className="icon">
               <img src={spices} alt="" />
             </div>
