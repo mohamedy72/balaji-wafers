@@ -1,6 +1,8 @@
 import cart from "../assets/cart.png";
 
-const Button = () => {
+type Props = {};
+
+const Button = (props: Props) => {
   return (
     <button className="input btn-group">
       <span className="btn-icon">

@@ -1,4 +1,6 @@
-const Counter = () => {
+type Props = {};
+
+const Counter = (props: Props) => {
   return (
     <div className="counter-group">
       <button className="counter add-item">+</button>
